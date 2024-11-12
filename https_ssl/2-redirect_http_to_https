@@ -39,7 +39,7 @@ frontend http_front
     default_backend http_back
 
 frontend https_front
-    bind *:443 ssl crt /etc/letsencrypt/live/www.jokmaker.tech-0001/combined.pem
+    bind *:443 ssl crt /etc/ssl/certs/combined.pem
     option http-server-close
     option forwardfor
     acl is_homepage path /
